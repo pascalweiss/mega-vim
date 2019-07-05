@@ -42,7 +42,7 @@ set laststatus=2
 set autochdir
 
 " Mouse and backspace
-set mouse=a
+set mouse=r
 set bs=2
 
 " Easier moving of code blocks
