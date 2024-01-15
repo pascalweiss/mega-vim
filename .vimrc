@@ -6,7 +6,7 @@ set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 filetype plugin indent on
 
 " Start NERDTree automatically
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
 " Jump to the main window
 autocmd vimenter * wincmd p
 let g:NERDTreeWinPos = "right"
