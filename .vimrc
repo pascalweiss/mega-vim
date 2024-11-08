@@ -1,9 +1,12 @@
 execute pathogen#infect()
 
 " Use 4 spaces for tab
-set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+set tabstop=2 softtabstop=2 expandtab shiftwidth=2
 
-filetype plugin indent on
+" Ensures Vim uses filetype plugins
+filetype plugin on
+" Enable indentation
+filetype indent on
 
 " Start NERDTree automatically
 " autocmd vimenter * NERDTree
@@ -51,10 +54,12 @@ vnoremap > >gv
 
 " Syntax highlighting
 syntax enable
-colorscheme wombat256mod
 " colorscheme default
-filetype off
-filetype plugin indent on
+colorscheme wombat256mod
+
+" Highlight trailing whitespace in all files
+autocmd BufRead,BufNewFile * match Error /\s\+$/
+
 
 " Show line numbers
 " set number
